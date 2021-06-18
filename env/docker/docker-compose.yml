@@ -1,0 +1,19 @@
+veersion: '3.9'
+
+
+services:
+  main:
+    image: alpin:latest
+    volumes:
+      - type: volume
+        # source: 
+        # target: 
+        volume:
+          nocopy: true
+        read_only: false
+  
+
+volumes:
+  s3-bucket:
+    external: true
+    
